@@ -1,0 +1,223 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#main .logo-wrapper {
+    position: relative;
+    width: 100%;
+    z-index: 100;
+}
+#main .logo-container {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    top: 15px;
+    right: 30px;
+    padding-right: 8rem;
+    padding-left: 8rem;
+}
+
+#main .logo {
+    width: 5rem;
+    height: 5rem;
+}
+
+#main .alfredo {
+    background-image: url('../assets/logo/alfredo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#main .staropramen {
+    background-image: url('../assets/logo/staropramen.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#main .main-pic {
+    background-image: url('../assets/images/Image3.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    width: 100%;
+    height: 100vh;
+}
+
+#main .main-pic-bg {
+    background-color: #3c5471;
+    width: 100%;
+    height: 100vh;
+}
+
+#main .main-pic-fade {
+    background-image: linear-gradient(to right, #3c5471 20%, transparent, transparent);
+    width: 100%;
+    height: 100vh;
+}
+
+#main .title-container {
+    max-width: 500px;
+}
+
+#main .title {
+    color: white;
+    font-size: 88px;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+}
+
+#main .subtitle {
+    font-size: 24px;
+    color: azure;
+}
+
+#photos .title {
+    color: #3c5471;
+    padding: 5rem 8rem;
+}
+
+#photos .grid-cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 2rem;
+}
+
+#photos .grid-card {
+    background-color: white;
+    cursor: pointer;
+}
+
+#photos .grid-card:hover {
+    background-color: white;
+    transform: scale(1.1);
+}
+
+@media (min-width: 1600px) {
+    #photos .grid-cards {
+        max-width: 1400px;
+    }
+}
+
+@media (min-width: 600px) {
+    #photos .grid-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    #photos .grid-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+#videos {
+    background-color: #3c5471;
+}
+
+#videos .title {
+    color: white;
+    padding: 5rem 8rem;
+}
+
+#videos .grid-cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 2rem;
+}
+
+@media (min-width: 1600px) {
+    #videos .grid-cards {
+        max-width: 1400px;
+    }
+}
+
+@media (min-width: 600px) {
+    #videos .grid-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+#partners {
+    background-color: #3c5471;
+}
+
+#partners .title {
+    color: white;
+    padding: 5rem 8rem;
+}
+
+#partners .grid-cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 2rem;
+}
+
+#partners .logo {
+    width: 15rem;
+    height: 15em;
+}
+
+#partners .staropramen {
+    background-image: url('../assets/logo/staropramen.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#partners .alfredo {
+    background-image: url('../assets/logo/alfredo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+@media (min-width: 1600px) {
+    #partners .grid-cards {
+        max-width: 1400px;
+    }
+}
+
+@media (min-width: 600px) {
+    #partners .grid-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.init-bg {
+    background-color: #3c5471;
+}
+
+#product .title {
+    color: #3c5471;
+    padding: 5rem 8rem;
+    padding-bottom: 1rem;
+}
+
+#product ul {
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+#contacts {
+    padding: 5rem 8rem;
+}
+
+.contact-card {
+    width: 600px;
+}
+
+#contacts table {
+    width: 500px;
+}
