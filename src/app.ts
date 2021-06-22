@@ -6,11 +6,10 @@ const app = express();
 
 app.use(express.static(__dirname + '/static'));
 
-const handleRequest = (req: Request, res: Response, _next: NextFunction) => {
+const handleRequest = (req: Request, res: Response, next: NextFunction) => {
     fs.readFile(__dirname + req.url, null, (error: any, data: any) => {
         if (error) {
-            res.writeHead(404);
-            res.write('Something went wrong!');
+            next();
         } else {
             res.writeHead(200);
             res.write(data);
@@ -19,6 +18,12 @@ const handleRequest = (req: Request, res: Response, _next: NextFunction) => {
     });
 };
 
+const handleUnmatchedUrl = (_req: Request, res: Response, _next: NextFunction) => {
+    res.redirect('/index.html');
+};
+
 app.use(handleRequest);
+
+app.use(handleUnmatchedUrl);
 
 http.createServer(app).listen(process.env.PORT || 8000);
