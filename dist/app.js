@@ -8,11 +8,10 @@ const http_1 = __importDefault(require("http"));
 const fs_1 = __importDefault(require("fs"));
 const app = express_1.default();
 app.use(express_1.default.static(__dirname + '/static'));
-const handleRequest = (req, res, _next) => {
+const handleRequest = (req, res, next) => {
     fs_1.default.readFile(__dirname + req.url, null, (error, data) => {
         if (error) {
-            res.writeHead(404);
-            res.write('Something went wrong!');
+            next();
         }
         else {
             res.writeHead(200);
@@ -21,5 +20,11 @@ const handleRequest = (req, res, _next) => {
         res.end();
     });
 };
+const handleUnmatchedUrl = (_req, res, _next) => {
+    res.redirect('/index.html');
+};
 app.use(handleRequest);
-http_1.default.createServer(app).listen(process.env.PORT || 8000);
+app.use(handleUnmatchedUrl);
+http_1.default.createServer(app).listen(process.env.PORT || 8000, () => {
+    console.log(`App listening at http://localhost:${process.env.PORT || 8000}`);
+});

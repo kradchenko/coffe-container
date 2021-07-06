@@ -1,54 +1,71 @@
+/* good */
 html {
     scroll-behavior: smooth;
 }
 
+/* good */
 #main .logo-wrapper {
     position: relative;
     width: 100%;
     z-index: 100;
 }
+
+/* good */
 #main .logo-container {
     position: absolute;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     top: 15px;
-    left: 30px;
-    padding-right: 8rem;
-    padding-left: 8rem;
+    left: 15px;
 }
 
+/* good */
 #main .logo {
-    width: 5rem;
-    height: 5rem;
-}
-
-#main .alfredo {
-    background-image: url('../assets/logo/alfredo.png');
+    width: 4rem;
+    height: 4rem;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+}
+
+/* good */
+#main .partner-circle:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transform: scale(1.15);
+}
+
+/* good */
+#main .alfredo {
+    background-image: url('../assets/logo/alfredo.png');
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
+/* good */
 #main .staropramen {
     background-image: url('../assets/logo/staropramen.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }
 
+/* realtively good */
+#main .corner {
+    background-image: url('../assets/logo/corner.jpg');
+}
+
+/* realtively good */
+#main .drinkcentrum {
+    background-image: url('../assets/logo/drinkcentrum.png');
+}
+
+/* good */
+#main .lavazza {
+    background-image: url('../assets/logo/lavazza.png');
+}
+
+/* good */
 #main .main-pic {
-    background-image: url('../assets/images/Image3.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
-    width: 100%;
-    height: 100vh;
-}
-
-#main .main-pic-2 {
     background-image: url('../assets/images/with/Image3.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -57,22 +74,26 @@ html {
     height: 100vh;
 }
 
+/* good */
 #main .main-pic-bg {
     background-color: #3c5471;
     width: 100%;
     height: 100vh;
 }
 
+/* good */
 #main .main-pic-fade {
     background-image: linear-gradient(to right, #3c5471 20%, transparent, transparent);
     width: 100%;
     height: 100vh;
 }
 
+/* good - add responsity */
 #main .title-container {
     max-width: 500px;
 }
 
+/* good - add responsity */
 #main .title {
     color: white;
     font-size: 88px;
@@ -80,16 +101,13 @@ html {
     letter-spacing: 1px;
 }
 
+/* good - add responsity */
 #main .subtitle {
     font-size: 24px;
     color: azure;
 }
 
-#photos .title {
-    color: #3c5471;
-    padding: 5rem 8rem;
-}
-
+/* good */
 #photos .grid-cards {
     max-width: 1200px;
     margin: 0 auto;
@@ -97,43 +115,41 @@ html {
     grid-gap: 2rem;
 }
 
+/* good */
 #photos .grid-card {
     background-color: white;
     cursor: pointer;
+    transition: ease-in-out 0.3s;
 }
 
+/* good */
 #photos .grid-card:hover {
     background-color: white;
     transform: scale(1.1);
 }
 
+/* good */
 @media (min-width: 1600px) {
     #photos .grid-cards {
         max-width: 1400px;
     }
 }
 
+/* good */
 @media (min-width: 600px) {
     #photos .grid-cards {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
+/* good */
 @media (min-width: 900px) {
     #photos .grid-cards {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-#videos {
-    background-color: #3c5471;
-}
-
-#videos .title {
-    color: white;
-    padding: 5rem 8rem;
-}
-
+/* good */
 #videos .grid-cards {
     max-width: 1200px;
     margin: 0 auto;
@@ -153,15 +169,6 @@ html {
     }
 }
 
-#partners {
-    background-color: #3c5471;
-}
-
-#partners .title {
-    color: white;
-    padding: 5rem 8rem;
-}
-
 #partners .grid-cards {
     max-width: 1200px;
     margin: 0 auto;
@@ -172,24 +179,34 @@ html {
 #partners .logo {
     width: 15rem;
     height: 15em;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 #partners .staropramen {
     background-image: url('../assets/logo/staropramen.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
 }
 
 #partners .alfredo {
     background-image: url('../assets/logo/alfredo.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+}
+
+/* realtively good */
+#partners .corner {
+    background-image: url('../assets/logo/corner.jpg');
+}
+
+/* realtively good */
+#partners .drinkcentrum {
+    background-image: url('../assets/logo/drinkcentrum.png');
+}
+
+/* good */
+#partners .lavazza {
+    background-image: url('../assets/logo/lavazza.png');
 }
 
 @media (min-width: 1600px) {
@@ -204,29 +221,62 @@ html {
     }
 }
 
-.init-bg {
-    background-color: #3c5471;
-}
-
-#product .title {
-    color: #3c5471;
-    padding: 5rem 8rem;
-    padding-bottom: 1rem;
-}
-
-#product ul {
-    padding-left: 8rem;
-    padding-right: 8rem;
-}
-
-#contacts {
-    padding: 5rem 8rem;
-}
-
 .contact-card {
     width: 600px;
 }
 
 #contacts table {
     width: 500px;
+}
+
+/* Utils */
+
+/* good - add responsity */
+.section-header {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.title {
+    font-size: 54px;
+}
+
+.title-divider-dark {
+    margin: 1rem 0;
+    width: 80%;
+    height: 5px;
+    background: linear-gradient(to right, rgb(59, 130, 246) 40%, transparent);
+}
+
+.title-divider-light {
+    margin: 1rem 0;
+    width: 80%;
+    height: 5px;
+    background: linear-gradient(to right, #fff 40%, transparent);
+}
+
+.subtitle {
+    font-size: 36px;
+    margin-top: 2rem;
+}
+
+.subsubtitle {
+    font-size: 24px;
+    margin-top: 2rem;
+}
+
+/* good */
+.dark-container {
+    background-color: #3c5471;
+    color: #ffffff;
+}
+
+/* good */
+.light-container {
+    background-color: #ffffff;
+    color: #3c5471;
+}
+
+.container {
+    padding: 2rem 8rem 2rem 8rem;
 }
