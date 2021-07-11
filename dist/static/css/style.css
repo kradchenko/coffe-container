@@ -166,11 +166,11 @@ footer {
 }
 
 .banner-partners .corner {
-    background-image: url('../assets/logo/corner3.png');
+    background-image: url('../assets/logo/corner-mini.png');
 }
 
 .banner-partners .drinkcentrum {
-    background-image: url('../assets/logo/drinkcentrum.png');
+    background-image: url('../assets/logo/drinkcentrum-mini.png');
 }
 
 .banner-partners .lavazza {
@@ -178,7 +178,7 @@ footer {
 }
 
 .banner-partners .wineplanet {
-    background-image: url('../assets/logo/wineplanet2.png');
+    background-image: url('../assets/logo/wineplanet-mini.png');
 }
 
 /* Main Title and Background Image*/
@@ -303,11 +303,11 @@ footer {
 }
 
 .banner-mobile-wrapper .corner {
-    background-image: url('../assets/logo/corner3.png');
+    background-image: url('../assets/logo/corner-mini.png');
 }
 
 .banner-mobile-wrapper .drinkcentrum {
-    background-image: url('../assets/logo/drinkcentrum.png');
+    background-image: url('../assets/logo/drinkcentrum-mini.png');
 }
 
 .banner-mobile-wrapper .lavazza {
@@ -315,7 +315,7 @@ footer {
 }
 
 .banner-mobile-wrapper .wineplanet {
-    background-image: url('../assets/logo/wineplanet2.png');
+    background-image: url('../assets/logo/wineplanet-mini.png');
 }
 
 /* ===SHOWROOM=== */
@@ -329,9 +329,13 @@ footer {
     color: #4e94d4;
 }
 
+#showroom .card img {
+    max-height: 200px;
+}
+
 @media (max-width: 700px) {
-    .card-effects:hover {
-        transform: none;
+    #showroom .card:hover {
+        box-shadow: none;
     }
 }
 
@@ -370,7 +374,7 @@ footer {
 
 #partners .corner {
     width: 18rem;
-    background-image: url('../assets/logo/corner.jpg');
+    background-image: url('../assets/logo/corner.png');
 }
 
 #partners .drinkcentrum {
@@ -384,8 +388,8 @@ footer {
 }
 
 #partners .wineplanet {
-    width: 20rem;
-    background-image: url('../assets/logo/wineplanet2.png');
+    width: 25rem;
+    background-image: url('../assets/logo/wineplanet.png');
 }
 
 #partners li {
