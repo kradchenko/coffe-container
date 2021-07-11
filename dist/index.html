@@ -5,9 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="/css/normalize.css" />
-        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-        <link href="/css/lightbox.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/css/bootstrap.rtl.min.css" />
+        <link rel="stylesheet" href="/css/lightbox.css" />
+        <link rel="stylesheet" href="/css/style.css" />
         <link
             href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
             rel="stylesheet"
@@ -18,107 +19,215 @@
                 background-color: rgb(248, 248, 248);
             }
         </style>
-        <link href="/css/style.css" rel="stylesheet" />
-        <title>Kúpte si vlastnú kaviareň!</title>
+        <title>Kúp si vlastnú kaviareň!</title>
     </head>
     <body>
         <main>
-            <section id="main">
-                <div class="logo-wrapper">
-                    <div class="logo-container">
-                        <div class="flex">
-                            <span class="text-2xl text-white">Partneri</span>
-                            <div class="flex-1 mx-5 w-1 bg-white border-none rounded"></div>
-                        </div>
-                        <a
-                            href="#alfredo"
-                            class="border bg-white rounded-full p-2 shadow-xl partner-circle"
-                        >
+            <section id="banner">
+                <div class="banner-partners">
+                    <div class="d-flex h-full">
+                        <div class="h5 text-light mb-0">Partneri</div>
+                        <div class="divider mx-3"></div>
+                    </div>
+                    <div class="logo-group">
+                        <a href="#alfredo" class="logo-circle">
                             <div class="logo alfredo"></div>
                         </a>
-                        <a
-                            href="#lavazza"
-                            class="border bg-white rounded-full p-2 ml-2 shadow-xl partner-circle"
-                        >
+                        <a href="#lavazza" class="logo-circle">
                             <div class="logo lavazza"></div>
                         </a>
-                        <a
-                            href="#corner"
-                            class="border bg-white rounded-full p-2 ml-2 shadow-xl partner-circle"
-                        >
+                        <a href="#corner" class="logo-circle">
                             <div class="logo corner"></div>
                         </a>
-                        <a
-                            href="#drinkcentrum"
-                            class="border bg-white rounded-full p-2 ml-2 shadow-xl partner-circle"
-                        >
+                        <a href="#wineplanet" class="logo-circle">
+                            <div class="logo wineplanet"></div>
+                        </a>
+                        <a href="#drinkcentrum" class="logo-circle">
                             <div class="logo drinkcentrum"></div>
                         </a>
-                        <a
-                            href="#staropramen"
-                            class="border bg-white rounded-full p-2 ml-2 shadow-xl partner-circle"
-                        >
+                        <a href="#staropramen" class="logo-circle">
                             <div class="logo staropramen"></div>
                         </a>
                     </div>
                 </div>
-                <div class="main-pic-bg relative">
-                    <div class="absolute h-full w-1/2 flex flex-col items-center justify-center">
-                        <div class="title-container flex flex-col">
-                            <h1 class="title">Kúp si svoju kaviareň</h1>
-                            <span class="my-5 h-1 w-full bg-blue-400 rounded"></span>
-                            <p class="subtitle">
-                                Začni podnikať s kavou – rozšír svoj obzor a objav nový rozmer vo
-                                svojom živote
-                            </p>
+                <div class="dark-container">
+                    <div class="banner-image">
+                        <div class="banner-fade">
+                            <div class="banner-title-wrapper">
+                                <div class="banner-title">
+                                    <h1 class="display-1">Kúp si svoju kaviareň</h1>
+                                    <span class="divider my-3"></span>
+                                    <p class="fs-4 lh-base">
+                                        Začni podnikať s kavou – rozšír si svoj obzor a objav nový
+                                        rozmer vo svojom živote
+                                    </p>
+                                    <div class="align-self-center mt-5">
+                                        <a href="#showroom" class="btn-lg btn-info text-white mr-4">
+                                            Pokračuj nižšie
+                                        </a>
+                                        <a href="#contact" class="btn-lg btn-info text-white">
+                                            Kontakt
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <a
-                            class="
-                                mt-8
-                                text-gray-700 text-lg
-                                bg-yellow-300
-                                px-2
-                                py-4
-                                rounded
-                                hover:bg-yellow-400
-                                focus:outline-none focus:ring
-                            "
-                            href="#photos"
-                        >
-                            Pokračuj nižšie
-                        </a>
-                    </div>
-                    <div class="main-pic">
-                        <div class="main-pic-fade"></div>
                     </div>
                 </div>
             </section>
-            <section id="photos" class="pb-20 light-container own-container">
-                <div class="section-header">
-                    <div class="title">Si kavičkar? Kup si svoju kaviareň...</div>
-                    <div class="title-divider-dark"></div>
-                    <div class="subtitle">Pôdorys a rôzne typy náhľadov</div>
+            <section id="banner-mobile" class="dark-container banner-mobile-wrapper">
+                <h1 class="display-1 text-center mt-3 mb-3">Kúp si svoju kaviareň</h1>
+                <span class="divider"></span>
+                <p class="fs-4 lh-base text-center mx-3 mb-4">
+                    Začni podnikať s kavou – rozšír si svoj obzor a objav nový rozmer vo svojom
+                    živote
+                </p>
+                <img src="/assets/images/banner-mobile1.png" alt="banner" />
+                <div class="d-flex flex-column mt-5">
+                    <div class="fs-4 text-center">Partneri</div>
+                    <div class="divider-light"></div>
                 </div>
-                <div class="grid-cards">
-                    <a
-                        class="shadow-xl rounded p-10 grid-card"
-                        href="/assets/images/podorys/podorys.pdf"
-                        target="_blank"
-                    >
-                        <div class="text-2xl flex justify-center pb-5">Pôdorys</div>
-                        <img class="rounded-sm" src="/assets/images/podorys/podorys.png" />
+                <div class="logo-group my-2">
+                    <a href="#alfredo" class="logo-circle">
+                        <div class="logo alfredo"></div>
+                    </a>
+                    <a href="#lavazza" class="logo-circle">
+                        <div class="logo lavazza"></div>
                     </a>
 
-                    <a
-                        class="shadow-xl rounded p-10 grid-card"
-                        href="/assets/images/without/Image3.png"
-                        data-lightbox="bezzabradlia"
-                    >
-                        <div class="text-2xl flex justify-center pb-5">Náhľady bez zábradlia</div>
-                        <img class="rounded-sm" src="/assets/images/without/Image3.png" />
+                    <a href="#corner" class="logo-circle">
+                        <div class="logo corner"></div>
+                    </a>
+                </div>
+                <div class="logo-group mb-2">
+                    <a href="#wineplanet" class="logo-circle">
+                        <div class="logo wineplanet"></div>
                     </a>
 
-                    <div class="hidden">
+                    <a href="#drinkcentrum" class="logo-circle">
+                        <div class="logo drinkcentrum"></div>
+                    </a>
+
+                    <a href="#staropramen" class="logo-circle">
+                        <div class="logo staropramen"></div>
+                    </a>
+                </div>
+                <div class="my-5">
+                    <a href="#showroom" class="btn-lg btn-info text-white mr-4">Pokračuj nižšie</a>
+                    <a href="#contact" class="btn-lg btn-info text-white"> Kontakt </a>
+                </div>
+            </section>
+            <section id="showroom" class="light-container py-5">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="display-2 text-center primary-color">
+                            Si kavičkar? Kup si svoju kaviareň...
+                        </h2>
+                    </div>
+                    <div class="basic-divider mt-3 mb-5"></div>
+                    <div class="row">
+                        <h3 class="fs-2 secondary-color">Pôdorys a rôzne typy náhľadov</h3>
+                    </div>
+                    <div class="row my-4">
+                        <a
+                            href="/assets/images/podorys/podorys.pdf"
+                            target="_blank"
+                            class="col-sm-12 col-md-6 col-lg-4 mb-3 card-effects"
+                        >
+                            <div class="card">
+                                <img
+                                    class="card-image-top"
+                                    src="/assets/images/podorys/podorys2.png"
+                                    alt="podorys"
+                                />
+                                <div class="card-body">
+                                    <div class="card-title fs-4">Pôdorys</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a
+                            href="/assets/images/without/Image3.png"
+                            data-lightbox="bezzabradlia"
+                            class="col-sm-12 col-md-6 col-lg-4 mb-3 card-effects"
+                        >
+                            <div class="card">
+                                <img
+                                    class="card-image-top"
+                                    src="/assets/images/without/Image1.png"
+                                    alt="podorys"
+                                />
+                                <div class="card-body">
+                                    <div class="card-title fs-4">Náhľady bez zábradlia</div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a
+                            href="/assets/images/with/Image1.png"
+                            data-lightbox="zabradlia"
+                            class="col-sm-12 col-md-6 col-lg-4 mb-3 card-effects"
+                        >
+                            <div class="card">
+                                <img
+                                    class="card-image-top"
+                                    src="/assets/images/with/Image1.png"
+                                    alt="podorys"
+                                />
+                                <div class="card-body">
+                                    <div class="card-title fs-4">Náhľady so zábradlím</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a
+                            href="/assets/images/cut1/1_rez1.png"
+                            data-lightbox="cut1"
+                            class="col-sm-12 col-md-6 col-lg-4 mb-3 card-effects"
+                        >
+                            <div class="card">
+                                <img
+                                    class="card-image-top"
+                                    src="/assets/images/cut1/1_rez1.png"
+                                    alt="podorys"
+                                />
+                                <div class="card-body">
+                                    <div class="card-title fs-4">Typ rezu 1</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a
+                            href="/assets/images/cut2/1_rez1.png"
+                            data-lightbox="cut2"
+                            class="col-sm-12 col-md-6 col-lg-4 mb-3 card-effects"
+                        >
+                            <div class="card">
+                                <img
+                                    class="card-image-top"
+                                    src="/assets/images/cut2/2_rez1.png"
+                                    alt="podorys"
+                                />
+                                <div class="card-body">
+                                    <div class="card-title fs-4">Typ rezu 2</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a
+                            href="/assets/images/cut3/3_rez1.png"
+                            data-lightbox="cut3"
+                            class="col-sm-12 col-md-6 col-lg-4 mb-3 card-effects"
+                        >
+                            <div class="card">
+                                <img
+                                    class="card-image-top"
+                                    src="/assets/images/cut3/3_rez1.png"
+                                    alt="podorys"
+                                />
+                                <div class="card-body">
+                                    <div class="card-title fs-4">Typ rezu 3</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="d-none">
                         <a
                             href="/assets/images/without/Image1.png"
                             data-lightbox="bezzabradlia"
@@ -183,18 +292,6 @@
                             href="/assets/images/without/Image34.png"
                             data-lightbox="bezzabradlia"
                         ></a>
-                    </div>
-
-                    <a
-                        class="shadow-xl rounded p-10 grid-card"
-                        href="/assets/images/with/Image1.png"
-                        data-lightbox="zabradlia"
-                    >
-                        <div class="text-2xl flex justify-center pb-5">Náhľady so zábradlím</div>
-                        <img class="rounded-sm" height="300" src="/assets/images/with/Image1.png" />
-                    </a>
-
-                    <div class="hidden">
                         <a href="/assets/images/with/Image2.png" data-lightbox="zabradlia"></a>
                         <a href="/assets/images/with/Image3.png" data-lightbox="zabradlia"></a>
                         <a href="/assets/images/with/Image4.png" data-lightbox="zabradlia"></a>
@@ -213,51 +310,15 @@
                         <a href="/assets/images/with/Image31.png" data-lightbox="zabradlia"></a>
                         <a href="/assets/images/with/Image32.png" data-lightbox="zabradlia"></a>
                         <a href="/assets/images/with/Image33.png" data-lightbox="zabradlia"></a>
-                    </div>
-
-                    <a
-                        class="shadow-xl rounded p-10 grid-card"
-                        href="/assets/images/cut1/1_rez1.png"
-                        data-lightbox="cut1"
-                    >
-                        <div class="text-2xl flex justify-center pb-5">Typ rezu 1</div>
-                        <img class="rounded-sm" height="300" src="/assets/images/cut1/1_rez1.png" />
-                    </a>
-
-                    <div class="hidden">
                         <a href="/assets/images/cut1/1_rez2.png" data-lightbox="cut1"></a>
                         <a href="/assets/images/cut1/1_rez3.png" data-lightbox="cut1"></a>
                         <a href="/assets/images/cut1/1_rez4.png" data-lightbox="cut1"></a>
                         <a href="/assets/images/cut1/1_rez5.png" data-lightbox="cut1"></a>
                         <a href="/assets/images/cut1/1_rez6.png" data-lightbox="cut1"></a>
-                    </div>
-
-                    <a
-                        class="shadow-xl rounded p-10 grid-card"
-                        href="/assets/images/cut2/1_rez1.png"
-                        data-lightbox="cut2"
-                    >
-                        <div class="text-2xl flex justify-center pb-5">Typ rezu 2</div>
-                        <img class="rounded-sm" src="/assets/images/cut2/2_rez1.png" />
-                    </a>
-
-                    <div class="hidden">
                         <a href="/assets/images/cut2/2_rez2.png" data-lightbox="cut2"></a>
                         <a href="/assets/images/cut2/2_rez3.png" data-lightbox="cut2"></a>
                         <a href="/assets/images/cut2/2_rez4.png" data-lightbox="cut2"></a>
                         <a href="/assets/images/cut2/2_rez5.png" data-lightbox="cut2"></a>
-                    </div>
-
-                    <a
-                        class="shadow-xl rounded p-10 grid-card"
-                        href="/assets/images/cut3/3_rez1.png"
-                        data-lightbox="cut3"
-                    >
-                        <div class="text-2xl flex justify-center pb-5">Typ rezu 3</div>
-                        <img class="rounded-sm" src="/assets/images/cut3/3_rez1.png" />
-                    </a>
-
-                    <div class="hidden">
                         <a href="/assets/images/cut3/3_rez2.png" data-lightbox="cut3"></a>
                         <a href="/assets/images/cut3/3_rez3.png" data-lightbox="cut3"></a>
                         <a href="/assets/images/cut3/3_rez4.png" data-lightbox="cut3"></a>
@@ -265,397 +326,401 @@
                     </div>
                 </div>
             </section>
-            <section id="videos" class="pb-20 dark-container own-container">
-                <div class="section-header">
-                    <div class="title">Kup kaviareň a my ti ju privezieme až domov</div>
-                    <div class="title-divider-light"></div>
-                    <div class="subtitle">3D Video Náhľady</div>
-                </div>
-                <div class="grid-cards">
-                    <video controls>
-                        <source
-                            src="https://coffe-container.s3.eu-central-1.amazonaws.com/video1.mp4"
-                            type="video/mp4"
-                        />
-                    </video>
-                    <video controls>
-                        <source
-                            src="https://coffe-container.s3.eu-central-1.amazonaws.com/video2.mp4"
-                            type="video/mp4"
-                        />
-                    </video>
-                    <video controls>
-                        <source
-                            src="https://coffe-container.s3.eu-central-1.amazonaws.com/video3.mp4"
-                            type="video/mp4"
-                        />
-                    </video>
-                    <video controls>
-                        <source
-                            src="https://coffe-container.s3.eu-central-1.amazonaws.com/video4.mp4"
-                            type="video/mp4"
-                        />
-                    </video>
-                </div>
-            </section>
-            <section id="product" class="pb-20 light-container own-container">
-                <div class="section-header">
-                    <div class="title">
-                        Chceš podnikať? Kupiť vlastnú kaviareň nebolo nikdy ľahšie...
+            <section id="video" class="dark-container py-5">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="display-2 text-center primary-color-light">
+                            Kup kaviareň a my ti ju dovezieme až domov...
+                        </h2>
                     </div>
-                    <div class="title-divider-dark"></div>
-                    <div class="subtitle">Čo ponúkame?</div>
-                </div>
-                <p class="text-gray-500 text-xl leading-8">
-                    Kontajnerovú kaviareň ponúkame v dvoch verziách a to s hornou terasou alebo bez
-                    nej. Hornú terasu je možné dovyrobiť aj neskôr, pokial vznikne potreba resp. na
-                    objednávku.
-                </p>
-                <p class="pt-8 text-gray-500 text-xl leading-8">
-                    Zakladná ponuka kaviarne je s nasledobným vybavením:
-                </p>
-                <ul class="list-disc list-inside text-gray-500 leading-10 text-base">
-                    <li>
-                        Kompletné elektro rozvody a rozvody vody resp.odpadovej vody v rámci celej
-                        vnútornej plochy kaviarne
-                    </li>
-                    <li>Pulty a police v súlade s vizualizáciou</li>
-                    <li>Vnútorný podružný merač spotreby vody a elektriny</li>
-                    <li>Výklopné predné a bočné čelo v súlade s vizualizáciou</li>
-                    <li>Vonkajšie osvetlenie s pohybovým čidlom po rohoch objektu</li>
-                    <li>Podsvietenie pultu pod policami</li>
-                    <li>Vonkajšia prípojka na vodu, elektrinu a odpadovú vodu</li>
-                </ul>
-            </section>
-            <section id="partners" class="pb-20 dark-container own-container">
-                <div class="section-header">
-                    <div class="title">S našimi partnermi to pojde ľahšie...</div>
-                    <div class="title-divider-light"></div>
-                    <div class="subsubtitle">
-                        Spoločnosť “Mojakáva“ ponúka pre záujemcov nasledovné možnosti spolupráce
-                        s dodávateľmi kávy a kávovarov a piva.
+                    <div class="basic-divider-light mt-3 mb-5"></div>
+                    <div class="row">
+                        <h3 class="lead fs-2 secondary-color-light">3D video náhľady</h3>
                     </div>
-                </div>
-                <div class="grid-cards">
-                    <div
-                        id="alfredo"
-                        class="grid-card shadow-xl bg-white p-10 flex flex-col justify-between"
-                    >
-                        <div>
-                            <div class="flex justify-center">
-                                <div class="logo alfredo rounded-full shadow"></div>
-                            </div>
-                            <span class="text-2xl font-semibold">Alfredo Espresso</span>
-                            <ul class="my-5 text-gray-700 list-disc list-inside leading-8">
-                                <li>Široký sortiment odberu svojich káv</li>
-                                <li>Dodania kávovaru podľa nasledujúcich možnosti:</li>
-                                <ul class="m-3 ml-10 text-gray-700 list-disc list-inside leading-8">
-                                    <li>Kávovar zdarma – podmienené odberom kávy</li>
-                                    <li>Kávovar na prenájom – podmienené odberom kávy</li>
-                                    <li>
-                                        Kávovar na splátky – možnosť 3-5 rozdelených splátok, podľa
-                                        veľkosti resp. ceny kávovaru
-                                    </li>
-                                </ul>
-                                <li>Pohotový a rýchly servis kávovarov a pružná dodávka tovaru</li>
-                            </ul>
-                        </div>
-                        <div class="flex justify-center">
-                            <a
-                                href="#"
-                                class="
-                                    bg-blue-400
-                                    rounded
-                                    text-center
-                                    px-5
-                                    py-4
-                                    focus:outline-none
-                                    hover:bg-blue-500
-                                    text-white
-                                "
-                                >Viac info</a
-                            >
-                            <a
-                                href="#"
-                                class="
-                                    ml-2
-                                    bg-blue-400
-                                    rounded
-                                    text-center
-                                    px-5
-                                    py-4
-                                    focus:outline-none
-                                    hover:bg-blue-500
-                                    text-white
-                                "
-                            >
-                                Kontakt
-                            </a>
-                        </div>
-                    </div>
-                    <div
-                        id="lavazza"
-                        class="grid-card shadow-xl bg-white p-10 flex flex-col justify-between"
-                    >
-                        <div>
-                            <div class="flex justify-center">
-                                <div class="logo lavazza rounded-full shadow"></div>
-                            </div>
-                            <span class="text-2xl font-semibold">Lavazza</span>
-                            <ul class="my-5 text-gray-700 list-disc list-inside leading-8">
-                                <li>Široký sortiment odberu svojich káv</li>
-                                <li>Dodania kávovaru podľa nasledujúcich možnosti:</li>
-                                <ul class="m-3 ml-10 text-gray-700 list-disc list-inside leading-8">
-                                    <li>Kávovar zdarma – podmienené odberom kávy</li>
-                                    <li>Kávovar na prenájom – podmienené odberom kávy</li>
-                                    <li>
-                                        Kávovar na splátky – možnosť 3-5 rozdelených splátok, podľa
-                                        veľkosti resp. ceny kávovaru
-                                    </li>
-                                </ul>
-                                <li>Pohotový a rýchly servis kávovarov a pružná dodávka tovaru</li>
-                            </ul>
-                        </div>
-                        <div class="flex justify-center">
-                            <a
-                                href="#"
-                                class="
-                                    bg-blue-400
-                                    rounded
-                                    text-center
-                                    px-5
-                                    py-4
-                                    focus:outline-none
-                                    hover:bg-blue-500
-                                    text-white
-                                "
-                                >Viac info</a
-                            >
-                            <a
-                                href="#"
-                                class="
-                                    ml-2
-                                    bg-blue-400
-                                    rounded
-                                    text-center
-                                    px-5
-                                    py-4
-                                    focus:outline-none
-                                    hover:bg-blue-500
-                                    text-white
-                                "
-                            >
-                                Kontakt
-                            </a>
-                        </div>
-                    </div>
-                    <div
-                        id="corner"
-                        class="grid-card shadow-xl bg-white p-10 flex flex-col justify-between"
-                    >
-                        <div>
-                            <div class="flex justify-center">
-                                <div class="logo corner rounded-full shadow"></div>
-                            </div>
-                            <span class="text-2xl font-semibold">Corner & Co.</span>
-                            <ul class="my-5 text-gray-700 list-disc list-inside leading-8">
-                                <li>Široký sortiment odberu svojich káv</li>
-                                <li>Dodania kávovaru podľa nasledujúcich možnosti:</li>
-                                <ul class="m-3 ml-10 text-gray-700 list-disc list-inside leading-8">
-                                    <li>Kávovar zdarma – podmienené odberom kávy</li>
-                                    <li>Kávovar na prenájom – podmienené odberom kávy</li>
-                                    <li>
-                                        Kávovar na splátky – možnosť 3-5 rozdelených splátok, podľa
-                                        veľkosti resp. ceny kávovaru
-                                    </li>
-                                </ul>
-                                <li>Pohotový a rýchly servis kávovarov a pružná dodávka tovaru</li>
-                            </ul>
-                        </div>
-                        <div class="flex justify-center">
-                            <a
-                                href="#"
-                                class="
-                                    bg-blue-400
-                                    rounded
-                                    text-center
-                                    px-5
-                                    py-4
-                                    focus:outline-none
-                                    hover:bg-blue-500
-                                    text-white
-                                "
-                                >Viac info</a
-                            >
-                            <a
-                                href="#"
-                                class="
-                                    ml-2
-                                    bg-blue-400
-                                    rounded
-                                    text-center
-                                    px-5
-                                    py-4
-                                    focus:outline-none
-                                    hover:bg-blue-500
-                                    text-white
-                                "
-                            >
-                                Kontakt
-                            </a>
-                        </div>
-                    </div>
-                    <div
-                        id="drinkcentrum"
-                        class="grid-card shadow-xl bg-white p-10 flex flex-col justify-between"
-                    >
-                        <div>
-                            <div class="flex justify-center">
-                                <div class="logo drinkcentrum rounded-full shadow"></div>
-                            </div>
-                            <span class="text-2xl font-semibold">Drinkcentrum.sk</span>
-                            <ul class="my-5 text-gray-700 list-disc list-inside leading-8">
-                                <li>Široký sortiment odberu svojich káv</li>
-                                <li>Dodania kávovaru podľa nasledujúcich možnosti:</li>
-                                <ul class="m-3 ml-10 text-gray-700 list-disc list-inside leading-8">
-                                    <li>Kávovar zdarma – podmienené odberom kávy</li>
-                                    <li>Kávovar na prenájom – podmienené odberom kávy</li>
-                                    <li>
-                                        Kávovar na splátky – možnosť 3-5 rozdelených splátok, podľa
-                                        veľkosti resp. ceny kávovaru
-                                    </li>
-                                </ul>
-                                <li>Pohotový a rýchly servis kávovarov a pružná dodávka tovaru</li>
-                            </ul>
-                        </div>
-                        <div class="flex justify-center">
-                            <a
-                                href="#"
-                                class="
-                                    bg-blue-400
-                                    rounded
-                                    text-center
-                                    px-5
-                                    py-4
-                                    focus:outline-none
-                                    hover:bg-blue-500
-                                    text-white
-                                "
-                                >Viac info</a
-                            >
-                            <a
-                                href="#"
-                                class="
-                                    ml-2
-                                    bg-blue-400
-                                    rounded
-                                    text-center
-                                    px-5
-                                    py-4
-                                    focus:outline-none
-                                    hover:bg-blue-500
-                                    text-white
-                                "
-                            >
-                                Kontakt
-                            </a>
-                        </div>
-                    </div>
-                    <div
-                        id="staropramen"
-                        class="grid-card shadow-xl bg-white p-10 flex flex-col justify-between"
-                    >
-                        <div>
-                            <div class="flex justify-center">
-                                <div class="logo staropramen rounded-full shadow"></div>
-                            </div>
-                            <span class="text-2xl font-semibold">Pivo Staroprameň</span>
-                            <ul class="my-5 text-gray-700 list-disc list-inside leading-8">
-                                <li>Pestrá ponuka sortimentu pív portfolia „Staroprameň“</li>
-                                <li>
-                                    Dodávka a montáž výčapného a chladiaceho zariadenia, pohárov atď
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="flex justify-center">
-                            <a
-                                href="#"
-                                class="
-                                    bg-blue-400
-                                    rounded
-                                    text-center
-                                    px-5
-                                    py-4
-                                    focus:outline-none
-                                    hover:bg-blue-500
-                                    text-white
-                                "
-                                >Viac info</a
-                            >
-                            <a
-                                href="#"
-                                class="
-                                    ml-2
-                                    bg-blue-400
-                                    rounded
-                                    text-center
-                                    px-5
-                                    py-4
-                                    focus:outline-none
-                                    hover:bg-blue-500
-                                    text-white
-                                "
-                            >
-                                Kontakt
-                            </a>
-                        </div>
+                    <div class="row my-4">
+                        <video controls class="col-sm-12 col-md-6 mb-5">
+                            <source
+                                src="https://coffe-container.s3.eu-central-1.amazonaws.com/video1.mp4"
+                                type="video/mp4"
+                            />
+                        </video>
+                        <video controls class="col-sm-12 col-md-6 mb-5">
+                            <source
+                                src="https://coffe-container.s3.eu-central-1.amazonaws.com/video2.mp4"
+                                type="video/mp4"
+                            />
+                        </video>
+                        <video controls class="col-sm-12 col-md-6 mb-5">
+                            <source
+                                src="https://coffe-container.s3.eu-central-1.amazonaws.com/video3.mp4"
+                                type="video/mp4"
+                            />
+                        </video>
+                        <video controls class="col-sm-12 col-md-6 mb-5">
+                            <source
+                                src="https://coffe-container.s3.eu-central-1.amazonaws.com/video4.mp4"
+                                type="video/mp4"
+                            />
+                        </video>
                     </div>
                 </div>
             </section>
-            <section id="contacts" class="flex justify-center light-container own-container">
-                <div
-                    class="
-                        bg-white
-                        shadow-xl
-                        flex flex-col
-                        justify-center
-                        items-center
-                        p-10
-                        contact-card
-                    "
-                >
-                    <h2 class="text-4xl text-center">Kontakt na objednavku</h2>
-                    <span class="my-10 h-1 w-full bg-blue-400 rounded"></span>
-                    <div class="flex flex-col justify-center mt-2">
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td class="text-xl">Telefónne číslo:</td>
-                                    <td class="text-right">
-                                        <a href="tel:+421905247469" class="text-blue-400 text-2xl"
-                                            >(+421) 905 247 469</a
-                                        >
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-xl">Email:</td>
-                                    <td class="text-right">
-                                        <a
-                                            href="mailto:info@podnikajskavou.sk"
-                                            class="text-blue-400 text-2xl"
-                                            >info@podnikajskavou.sk</a
-                                        >
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+            <section id="product" class="light-container py-5">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="display-2 text-center primary-color">
+                            Chceš podnikať? Kupiť vlastnú kaviareň nebolo nikdy ľahšie...
+                        </h2>
+                    </div>
+                    <div class="basic-divider mt-3 mb-5"></div>
+                    <div class="row mb-3">
+                        <h3 class="fs-2 secondary-color">Čo ponúkame?</h3>
+                    </div>
+                    <p class="fs-4 mb-2">
+                        Kontajnerovú kaviareň ponúkame v dvoch verziách a to s hornou terasou alebo
+                        bez nej. Hornú terasu je možné dovyrobiť aj neskôr, pokial vznikne potreba
+                        resp. na objednávku.
+                    </p>
+                    <div>
+                        <p class="fs-4">Zakladná ponuka kaviarne je s nasledobným vybavením:</p>
+                        <ul class="fs-5">
+                            <li>
+                                Kompletné elektro rozvody a rozvody vody resp.odpadovej vody v rámci
+                                celej vnútornej plochy kaviarne
+                            </li>
+                            <li>Pulty a police v súlade s vizualizáciou</li>
+                            <li>Vnútorný podružný merač spotreby vody a elektriny</li>
+                            <li>Výklopné predné a bočné čelo v súlade s vizualizáciou</li>
+                            <li>Vonkajšie osvetlenie s pohybovým čidlom po rohoch objektu</li>
+                            <li>Podsvietenie pultu pod policami</li>
+                            <li>Vonkajšia prípojka na vodu, elektrinu a odpadovú vodu</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="partners" class="dark-container py-5">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="display-2 text-center primary-color-light">
+                            S našimi partnermi to pojde ľahšie...
+                        </h2>
+                    </div>
+                    <div class="basic-divider-light mt-3 mb-5"></div>
+                    <div class="row">
+                        <p class="fs-4 secondary-color-light lead">
+                            Spoločnosť “Mojakáva“ ponúka pre záujemcov nasledovné možnosti
+                            spolupráce s dodávateľmi kávy, kávovarov a piva.
+                        </p>
+                    </div>
+                    <div class="row my-4">
+                        <div class="col-md-12 col-lg-6 mb-5">
+                            <div class="card secondary-color h-100" id="alfredo">
+                                <div class="logo-container my-4">
+                                    <div class="logo alfredo"></div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title h4 fw-bolder mb-4">Alfredo Espresso</div>
+                                    <div class="card-text fs-o">
+                                        <ul>
+                                            <li>Široký sortiment odberu svojich káv</li>
+                                            <li>Dodania kávovaru podľa nasledujúcich možnosti:</li>
+                                            <ul>
+                                                <li>Kávovar zdarma – podmienené odberom kávy</li>
+                                                <li>
+                                                    Kávovar na prenájom – podmienené odberom kávy
+                                                </li>
+                                                <li>
+                                                    Kávovar na splátky – možnosť 3-5 rozdelených
+                                                    splátok, podľa veľkosti resp. ceny kávovaru
+                                                </li>
+                                            </ul>
+                                            <li>
+                                                Pohotový a rýchly servis kávovarov a pružná dodávka
+                                                tovaru
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div
+                                    class="
+                                        d-flex
+                                        justify-content-evenly
+                                        pt-3
+                                        pb-5
+                                        w-100
+                                        align-self-end
+                                    "
+                                >
+                                    <a href="" class="btn-lg btn-info text-light"
+                                        >Viac informacii</a
+                                    >
+                                    <a href="" class="btn-lg btn-info text-light">Kontakt</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 mb-5">
+                            <div class="card secondary-color h-100" id="alfredo">
+                                <div class="logo-container my-4">
+                                    <div class="logo lavazza"></div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title h4 fw-bolder mb-4">Lavazza</div>
+                                    <div class="card-text fs-o">
+                                        <p>
+                                            Spoločnosť Corner & Co. zabezpečuje už od roku 2000
+                                            autorizovanú a výhradnú distribúciu kávy Lavazza do
+                                            všetkých predajných kanálov na Slovensku.
+                                        </p>
+                                        <p>
+                                            Firma si zakladá na vysokom štandarde predajného a
+                                            popredajného servisu, aby si mohli zákazníci vychutnať
+                                            kávu najvyššej kvality vo všetkých kútoch našej krajiny.
+                                        </p>
+                                        <ul>
+                                            <li>široký sortiment zrnkovej a mletej kávy</li>
+                                            <li>kávovar zdarma – podmienené odberom kávy</li>
+                                            <li>kávostroje rôznych značiek na predaj a prenájom</li>
+                                            <li>servis kávovarov a pružná dodávka tovaru</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div
+                                    class="
+                                        d-flex
+                                        justify-content-evenly
+                                        pt-3
+                                        pb-5
+                                        w-100
+                                        align-self-end
+                                    "
+                                >
+                                    <a href="" class="btn-lg btn-info text-light"
+                                        >Viac informacii</a
+                                    >
+                                    <a href="" class="btn-lg btn-info text-light">Kontakt</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 mb-5">
+                            <div class="card secondary-color h-100" id="corner">
+                                <div class="logo-container my-4">
+                                    <div class="logo corner"></div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title h4 fw-bolder mb-4">Corner & Co.</div>
+                                    <div class="card-text fs-o">
+                                        <p>
+                                            Corner & Co. je medzinárodná skupina spoločností v
+                                            oblasti prémiovej gastronómie, ktorá sa špecializuje na
+                                            distribúciu vína, destilátov a kávy.
+                                        </p>
+                                        <p>
+                                            V portfóliu spoločnosti nájdete 3 000 druhov vína a
+                                            svetoznáme značky rumov, whisky, ginov, vodky, či
+                                            koňakov. Spoločnosť starostlivo budovaná a vedená
+                                            rodinou Chládekovcov, má postavenie lídra v oblasti
+                                            gastronómie.
+                                        </p>
+                                        <p>
+                                            História Corner začala v roku 1994 a jej aktivity sa za
+                                            dve desaťročia rozrástli na trhoch Slovenska, Českej
+                                            republiky, Rakúska, Maďarska a Poľska.
+                                        </p>
+                                        <ul>
+                                            <li>Profesionálny obchodný tím</li>
+                                            <li>Rýchle nákupné procesy</li>
+                                            <li>Online objednávky v B2B eshope</li>
+                                            <li>Služby someliérov a baristov</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div
+                                    class="
+                                        d-flex
+                                        justify-content-evenly
+                                        pt-3
+                                        pb-5
+                                        w-100
+                                        align-self-end
+                                    "
+                                >
+                                    <a href="" class="btn-lg btn-info text-light"
+                                        >Viac informacii</a
+                                    >
+                                    <a href="" class="btn-lg btn-info text-light">Kontakt</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 mb-5">
+                            <div class="card secondary-color h-100" id="alfredo">
+                                <div class="logo-container my-4">
+                                    <div class="logo wineplanet"></div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title h4 fw-bolder mb-4">WinePlanet.sk</div>
+                                    <div class="card-text fs-o">
+                                        <p>
+                                            Najväčší eshop s vínom na Slovensku. V ponuke nájdete
+                                            viac ako 2500 druhov vína a destilátov z celej planéty a
+                                            vyše 300 000 fliaš skladom.
+                                        </p>
+                                        <p>
+                                            Všetky vína sú starostlivo vybrané a degustované
+                                            someliérmi.
+                                        </p>
+                                        <ul>
+                                            <li>Široký sortiment vína</li>
+                                            <li>Dodanie do 2 dní</li>
+                                            <li>Blesková zásielka do hodiny pre BA a okolie</li>
+                                            <li>Množstvo eventov, akcií a informácií</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div
+                                    class="
+                                        d-flex
+                                        justify-content-evenly
+                                        pt-3
+                                        pb-5
+                                        w-100
+                                        align-self-end
+                                    "
+                                >
+                                    <a href="" class="btn-lg btn-info text-light"
+                                        >Viac informacii</a
+                                    >
+                                    <a href="" class="btn-lg btn-info text-light">Kontakt</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 mb-5">
+                            <div class="card secondary-color h-100" id="drinkcentrum">
+                                <div class="logo-container my-4">
+                                    <div class="logo drinkcentrum"></div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title h4 fw-bolder mb-4">Drinkcentrum.sk</div>
+                                    <div class="card-text fs-o">
+                                        <p>
+                                            Dovoz značkového tovaru, kvalita poskytovaných služieb,
+                                            zvyšovanie objemu dodávok - piliere, na ktorých je
+                                            položený úspech firmy K&K EXPORT-IMPORT so sídlom v
+                                            Martine.
+                                        </p>
+                                        <p>
+                                            Počas svojho pôsobenia na slovenskom trhu sa firma
+                                            postupne prepracovala od obchodovania s liehovými
+                                            nápojmi českých výrobcov k rozšíreniu sortimentu o
+                                            výrobky pochádzajúce z celého sveta.
+                                        </p>
+                                        <p>
+                                            Ponúkame široký sortiment bežných, ale aj veľmi
+                                            špecifických druhov nápojov, ktorý pravidelne dopĺňame o
+                                            atraktívne novinky. Milovníkom značkového alkoholu
+                                            prinášame priamo z pivníc a skladov svetových výrobcov
+                                            exkluzívne značky alkoholických nápojov za primerané
+                                            ceny. Ak je to v našich možnostiach zabezpečíme aj
+                                            výnimočný tovar podľa individuálnych požiadaviek
+                                            zákazníkov.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="
+                                        d-flex
+                                        justify-content-evenly
+                                        pt-3
+                                        pb-5
+                                        w-100
+                                        align-self-flex
+                                    "
+                                >
+                                    <a href="" class="btn-lg btn-info text-light"
+                                        >Viac informacii</a
+                                    >
+                                    <a href="" class="btn-lg btn-info text-light">Kontakt</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 mb-5">
+                            <div class="card secondary-color h-100" id="staropramen">
+                                <div class="logo-container my-4">
+                                    <div class="logo staropramen"></div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title h4 fw-bolder mb-4">Staropramen</div>
+                                    <div class="card-text fs-5">
+                                        <ul>
+                                            <li>
+                                                Pestrá ponuka sortimentu pív portfolia „Staroprameň“
+                                            </li>
+                                            <li>
+                                                Dodávka a montáž výčapného a chladiaceho zariadenia,
+                                                pohárov atď.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div
+                                    class="
+                                        d-flex
+                                        justify-content-evenly
+                                        pt-3
+                                        pb-5
+                                        w-100
+                                        align-self-end
+                                    "
+                                >
+                                    <a href="" class="btn-lg btn-info text-light"
+                                        >Viac informacii</a
+                                    >
+                                    <a href="" class="btn-lg btn-info text-light">Kontakt</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="light-container py-5">
+                <div class="d-flex justify-content-center">
+                    <div class="card contact-width py-3 px-2">
+                        <div class="card-body">
+                            <div class="card-title text-center text-uppercase h2 mb-3">
+                                Kontaktujte nas
+                            </div>
+                            <div class="card-subtitle fs-5">
+                                V pripade zaujmu neváhajte nás kontaktovať spôsobom, ktorý Vám
+                                najviac vyhovuje
+                            </div>
+                            <div class="divider"></div>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Telefónne číslo:</td>
+                                        <td>
+                                            <a href="tel:+421905247469" class="text-right"
+                                                >(+421) 905 247 469</a
+                                            >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Email:</td>
+                                        <td>
+                                            <a href="mailto:info@podnikajskavou.sk"
+                                                >info@podnikajskavou.sk</a
+                                            >
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
-        <footer class="p-5 flex justify-start items-center text-gray-300 dark-container">
-            <span>&#169 2021 Kirill Radchenko |</span>  
-            <a href="https://www.linkedin.com/in/kirill-radchenko-836063182/" class="ml-2">
+        <footer class="container-fluid dark-container footer-container p-3">
+            <span>&#169 2021 Kirill Radchenko |</span>
+            <a href="https://www.linkedin.com/in/kirill-radchenko-836063182/">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -669,7 +734,7 @@
                     />
                 </svg>
             </a>
-            <a href="tel:+421915070105" class="ml-2">
+            <a href="tel:+421915070105">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -683,7 +748,7 @@
                     />
                 </svg>
             </a>
-            <a href="mailto:kirillalexradchenko@gmail.com" class="ml-2">
+            <a href="mailto:kirillalexradchenko@gmail.com">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -698,6 +763,9 @@
                 </svg>
             </a>
         </footer>
+
+        <script src="/js/bootstrap.bundle.js"></script>
+        <script src="/js/bootstrap.bundle.min.js"></script>
         <script src="/js/lightbox-plus-jquery.min.js"></script>
     </body>
 </html>

@@ -1,18 +1,83 @@
-/* good */
+/* DOCUMENT INFORMATION
+	- Document: Moja kava
+	- Version:  1.0.0
+	- Client:   L. Pidany
+	- Author:   K. Radchenko   
+*/
+
+/* ===GLOBAL=== */
+
 html {
     scroll-behavior: smooth;
 }
 
-/* good */
-#main .logo-wrapper {
-    position: relative;
-    width: 100%;
-    z-index: 100;
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
-/* good */
-#main .logo-container {
+a:visited {
+    color: inherit;
+}
+
+footer {
+    margin: 0;
+}
+
+.dark-container {
+    background-color: #3c5471;
+    color: #ffffff;
+}
+
+.light-container {
+    background-color: #ffffff;
+    color: #3c5471;
+}
+
+.primary-color {
+    color: #3c5471;
+}
+
+.secondary-color {
+    color: #2a486d;
+}
+
+.primary-color-light {
+    color: #ffffff;
+}
+
+.secondary-color-light {
+    color: #f0f0f0;
+}
+
+.basic-divider {
+    width: 100%;
+    border-radius: 20px;
+    height: 0.4rem;
+    background-image: linear-gradient(to right, transparent, #4e94d4, transparent);
+}
+
+.basic-divider-light {
+    width: 100%;
+    border-radius: 20px;
+    height: 0.4rem;
+    background-image: linear-gradient(to right, transparent, #ffffff, transparent);
+}
+
+.mr-4 {
+    margin-right: 1rem;
+}
+
+/* ===BANNER=== */
+#banner {
+    position: relative;
+}
+
+/* Partners */
+.banner-partners {
     position: absolute;
+    width: 500px;
+    z-index: 100;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -20,52 +85,105 @@ html {
     left: 15px;
 }
 
-/* good */
-#main .logo {
-    width: 4rem;
-    height: 4rem;
+@media (max-width: 625px) {
+    #banner {
+        display: none;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 820px) {
+    .banner-partners {
+        display: none;
+    }
+}
+
+.banner-partners .divider {
+    flex: 1 0 0;
+    width: 1px;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.banner-partners .logo-group {
+    display: flex;
+    width: 650px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.banner-partners .logo-circle {
+    background-color: #ffffffe3;
+    border-radius: 9999px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 0.5rem;
+    margin-right: 1rem;
+}
+
+.banner-partners .logo {
+    width: 4.5rem;
+    height: 4.5rem;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
 
-/* good */
-#main .partner-circle:hover {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
-        rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
-        rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    transform: scale(1.15);
+@media (max-width: 900px) {
+    .banner-partners .logo-circle {
+        margin-right: 0;
+    }
+    .banner-partners .logo {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .banner-partners .logo-group {
+        width: 450px;
+    }
 }
 
-/* good */
-#main .alfredo {
+@media (max-width: 700px) {
+    .banner-partners .logo-group {
+        width: 250px;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}
+
+.banner-partners .logo-circle:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    transform: scale(1.15);
+    background-color: #ffffff;
+}
+
+.banner-partners .alfredo {
     background-image: url('../assets/logo/alfredo.png');
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
-/* good */
-#main .staropramen {
+.banner-partners .staropramen {
     background-image: url('../assets/logo/staropramen.png');
 }
 
-/* realtively good */
-#main .corner {
-    background-image: url('../assets/logo/corner.jpg');
+.banner-partners .corner {
+    background-image: url('../assets/logo/corner3.png');
 }
 
-/* realtively good */
-#main .drinkcentrum {
+.banner-partners .drinkcentrum {
     background-image: url('../assets/logo/drinkcentrum.png');
 }
 
-/* good */
-#main .lavazza {
+.banner-partners .lavazza {
     background-image: url('../assets/logo/lavazza.png');
 }
 
-/* good */
-#main .main-pic {
+.banner-partners .wineplanet {
+    background-image: url('../assets/logo/wineplanet2.png');
+}
+
+/* Main Title and Background Image*/
+
+.banner-image {
     background-image: url('../assets/images/with/Image3.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -74,209 +192,256 @@ html {
     height: 100vh;
 }
 
-/* good */
-#main .main-pic-bg {
-    background-color: #3c5471;
-    width: 100%;
-    height: 100vh;
-}
-
-/* good */
-#main .main-pic-fade {
+.banner-fade {
     background-image: linear-gradient(to right, #3c5471 20%, transparent, transparent);
     width: 100%;
     height: 100vh;
 }
 
-/* good - add responsity */
-#main .title-container {
-    max-width: 500px;
+.banner-title-wrapper {
+    width: 45%;
+    height: 100%;
 }
 
-/* good - add responsity */
-#main .title {
-    color: white;
-    font-size: 88px;
-    line-height: 1.5em;
-    letter-spacing: 1px;
+.banner-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    margin-left: 3.5rem;
+    width: 650px;
 }
 
-/* good - add responsity */
-#main .subtitle {
-    font-size: 24px;
-    color: azure;
-}
-
-/* good */
-#photos .grid-cards {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-gap: 2rem;
-}
-
-/* good */
-#photos .grid-card {
-    background-color: white;
-    cursor: pointer;
-    transition: ease-in-out 0.3s;
-}
-
-/* good */
-#photos .grid-card:hover {
-    background-color: white;
-    transform: scale(1.1);
-}
-
-/* good */
-@media (min-width: 1600px) {
-    #photos .grid-cards {
-        max-width: 1400px;
+@media (max-width: 1250px) {
+    .banner-title {
+        width: 450px;
+        margin-left: 1.5rem;
     }
 }
 
-/* good */
-@media (min-width: 600px) {
-    #photos .grid-cards {
-        grid-template-columns: repeat(2, 1fr);
+.banner-title .divider {
+    width: 70%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #4e94d4 60%, transparent);
+}
+
+/* ===BANNER MOBILE=== */
+
+.banner-mobile-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-mobile-wrapper .divider {
+    width: calc(100% - 0.75rem);
+    padding: 0.2rem 0;
+    margin: 0.75rem 1.5rem;
+    background-color: #5185b6;
+    border-radius: 20px;
+}
+
+@media (min-width: 625px) {
+    #banner-mobile {
+        display: none;
     }
 }
 
-/* good */
-@media (min-width: 900px) {
-    #photos .grid-cards {
-        grid-template-columns: repeat(3, 1fr);
+.banner-mobile-wrapper img {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.banner-mobile-wrapper .divider-light {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 0.2rem 0;
+    border-radius: 20px;
+    margin: 1rem 0;
+}
+
+.banner-mobile-wrapper .logo-group {
+    width: 100%;
+    display: flex;
+    padding: 0 2rem;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 540px) {
+    .banner-mobile-wrapper .logo-group {
+        padding: 0;
+        justify-content: space-evenly;
     }
 }
 
-/* good */
-#videos .grid-cards {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-gap: 2rem;
+.banner-mobile-wrapper .logo-circle {
+    border-radius: 9999px;
+    background-color: #ffffff;
+    padding: 0.5rem;
 }
 
-@media (min-width: 1600px) {
-    #videos .grid-cards {
-        max-width: 1400px;
-    }
-}
-
-@media (min-width: 600px) {
-    #videos .grid-cards {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-#partners .grid-cards {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-gap: 2rem;
-}
-
-#partners .logo {
-    width: 15rem;
-    height: 15em;
+.banner-mobile-wrapper .logo {
+    width: 5rem;
+    height: 5rem;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+}
+
+.banner-mobile-wrapper .alfredo {
+    background-image: url('../assets/logo/alfredo.png');
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
-#partners .staropramen {
+.banner-mobile-wrapper .staropramen {
     background-image: url('../assets/logo/staropramen.png');
 }
 
-#partners .alfredo {
-    background-image: url('../assets/logo/alfredo.png');
+.banner-mobile-wrapper .corner {
+    background-image: url('../assets/logo/corner3.png');
 }
 
-/* realtively good */
-#partners .corner {
-    background-image: url('../assets/logo/corner.jpg');
-}
-
-/* realtively good */
-#partners .drinkcentrum {
+.banner-mobile-wrapper .drinkcentrum {
     background-image: url('../assets/logo/drinkcentrum.png');
 }
 
-/* good */
-#partners .lavazza {
+.banner-mobile-wrapper .lavazza {
     background-image: url('../assets/logo/lavazza.png');
 }
 
-@media (min-width: 1600px) {
-    #partners .grid-cards {
-        max-width: 1400px;
+.banner-mobile-wrapper .wineplanet {
+    background-image: url('../assets/logo/wineplanet2.png');
+}
+
+/* ===SHOWROOM=== */
+
+#showroom .card {
+    transition: ease-in-out 0.3s;
+}
+
+#showroom .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    color: #4e94d4;
+}
+
+@media (max-width: 700px) {
+    .card-effects:hover {
+        transform: none;
     }
 }
 
-@media (min-width: 600px) {
-    #partners .grid-cards {
-        grid-template-columns: repeat(2, 1fr);
+/* ===VIDEOS=== */
+
+/* ===PRODUCT=== */
+
+#product li {
+    margin-bottom: 0.5rem;
+}
+
+/* ===PARTNERS=== */
+
+#partners .logo-container {
+    display: flex;
+    justify-content: center;
+    border-bottom: solid 0.5px #2a486da9;
+}
+
+#partners .logo {
+    height: 15rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#partners .alfredo {
+    width: 20rem;
+    background-image: url('../assets/logo/alfredo.png');
+}
+
+#partners .staropramen {
+    width: 20rem;
+    background-image: url('../assets/logo/staropramen.png');
+}
+
+#partners .corner {
+    width: 18rem;
+    background-image: url('../assets/logo/corner.jpg');
+}
+
+#partners .drinkcentrum {
+    width: 22rem;
+    background-image: url('../assets/logo/drinkcentrum.png');
+}
+
+#partners .lavazza {
+    width: 20rem;
+    background-image: url('../assets/logo/lavazza.png');
+}
+
+#partners .wineplanet {
+    width: 20rem;
+    background-image: url('../assets/logo/wineplanet2.png');
+}
+
+#partners li {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+#partners .fs-o {
+    font-size: 1.125rem !important;
+}
+
+/* ===CONTACT=== */
+
+.contact-width {
+    max-width: 450px;
+    width: 100%;
+}
+
+@media (min-width: 650px) {
+    .contact-width {
+        max-width: 600px;
     }
 }
 
-.contact-card {
-    width: 600px;
+#contact .divider {
+    margin: 2rem 2rem;
+    height: 0.25rem;
+    background-color: #4e94d4;
+    border-radius: 20px;
 }
 
-#contacts table {
-    width: 500px;
+#contact table {
+    width: 100%;
 }
 
-/* Utils */
-
-/* good - add responsity */
-.section-header {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+#contact table td {
+    font-size: 1.25rem;
 }
 
-.title {
-    font-size: 54px;
+#contact table td:nth-child(2) {
+    text-align: right;
+    font-weight: 600;
 }
 
-.title-divider-dark {
-    margin: 1rem 0;
-    width: 80%;
-    height: 5px;
-    background: linear-gradient(to right, rgb(59, 130, 246) 40%, transparent);
+#contact a:hover {
+    color: #4e94d4;
 }
 
-.title-divider-light {
-    margin: 1rem 0;
-    width: 80%;
-    height: 5px;
-    background: linear-gradient(to right, #fff 40%, transparent);
-}
+/* ===FOOTER=== */
 
-.subtitle {
-    font-size: 36px;
-    margin-top: 2rem;
-}
-
-.subsubtitle {
-    font-size: 24px;
-    margin-top: 2rem;
-}
-
-/* good */
-.dark-container {
-    background-color: #3c5471;
+.footer-container {
     color: #ffffff;
+    font-size: 1rem;
+    font-weight: 300;
 }
 
-/* good */
-.light-container {
-    background-color: #ffffff;
-    color: #3c5471;
-}
-
-.own-container {
-    padding: 2rem 8rem 2rem 8rem;
+.footer-container a:hover {
+    color: #e0dcdc;
 }
