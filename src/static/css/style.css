@@ -341,6 +341,11 @@ footer {
 
 /* ===VIDEOS=== */
 
+#video video {
+    background-color: #272727;
+    width: 100%;
+}
+
 /* ===PRODUCT=== */
 
 #product li {
