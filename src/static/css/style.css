@@ -324,6 +324,13 @@ footer {
     background-position: center;
 }
 
+@media (max-width: 290px) {
+    .banner-mobile-wrapper .logo {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
 .banner-mobile-wrapper .alfredo {
     background-image: url('../assets/logo/alfredo.png');
     padding-top: 1rem;
@@ -464,6 +471,24 @@ footer {
 
 #contact table td {
     font-size: 1.25rem;
+}
+
+@media (max-width: 360px) {
+    #contact table td {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 290px) {
+    #contact table td {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 225px) {
+    #contact table td {
+        font-size: 0.65rem;
+    }
 }
 
 #contact table td:nth-child(2) {
