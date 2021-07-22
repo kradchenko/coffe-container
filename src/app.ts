@@ -1,10 +1,21 @@
 import express, { NextFunction, Request, Response } from 'express';
 import http from 'http';
 import fs from 'fs';
+import { resolveModuleName } from 'typescript';
+import e from 'express';
 
 const app = express();
 
 app.use(express.static(__dirname + '/static'));
+app.enable('trust proxy');
+
+app.use('*', (req: Request, res: Response, next: NextFunction) => {
+    if (process.env.NODE_ENV === 'production') {
+        req.secure ? next() : res.redirect('https://' + req.headers.host + req.url);
+    } else {
+        next();
+    }
+});
 
 const handleRequest = (req: Request, res: Response, next: NextFunction) => {
     if (req.url === '/') {
