@@ -7,19 +7,31 @@ const app = express();
 app.use(express.static(__dirname + '/static'));
 
 const handleRequest = (req: Request, res: Response, next: NextFunction) => {
-    fs.readFile(__dirname + req.url, null, (error: any, data: any) => {
-        if (error) {
-            next();
-        } else {
-            res.writeHead(200);
-            res.write(data);
-        }
-        res.end();
-    });
+    if (req.url === '/') {
+        fs.readFile(__dirname + '/index.html', null, (error: any, data: any) => {
+            if (error) {
+                next();
+            } else {
+                res.writeHead(200);
+                res.write(data);
+            }
+            res.end();
+        });
+    } else {
+        fs.readFile(__dirname + req.url, null, (error: any, data: any) => {
+            if (error) {
+                next();
+            } else {
+                res.writeHead(200);
+                res.write(data);
+            }
+            res.end();
+        });
+    }
 };
 
 const handleUnmatchedUrl = (_req: Request, res: Response, _next: NextFunction) => {
-    res.redirect('/index.html');
+    res.redirect('/');
 };
 
 app.use(handleRequest);
