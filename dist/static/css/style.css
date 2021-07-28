@@ -630,3 +630,30 @@ footer {
 li {
     list-style-position: inside;
 }
+
+/* ===NAV=== */
+.nav-container {
+    background-color: #3c5471;
+    color: #cac9c9;
+    width: 100%;
+}
+
+.nav-container .link {
+    transition: all 0.3s ease-in-out;
+    border-bottom: 1px solid transparent;
+}
+
+.nav-container .link-active {
+    color: #eeeeee;
+}
+
+.nav-container .link:hover,
+.nav-container.link-active:hover {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+/* ===NAV BOTTOM=== */
+.nav-bottom a:hover {
+    color: #ffffffa4;
+}
